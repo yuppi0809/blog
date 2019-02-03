@@ -1,0 +1,248 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//カスタムフォント
+
+
+@font-face {
+    font-family: '80erfinaldemo';
+    src: url('80erfinaldemo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Boku2-Regular';
+    src: url('Boku2-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0080-FFFF;
+}
+
+//カスタムフォント
+
+html{
+  font-family: Arial,'Boku2-Regular',cursive!Important;
+}
+
+
+header{
+  max-width:960px;
+  margin: 0 auto;
+}
+
+.brand-logo{
+  display:block;
+  color:black;
+font-family: '80erfinaldemo';
+  font-size:35px !Important;
+}
+
+@media screen and (max-width: 600px){
+.brand-logo{
+font-size:25px !Important;
+}
+
+html{
+font-size:10px !Important;
+
+}
+}
+
+@media screen and (max-width: 400px){
+.brand-logo{
+font-size:15px !Important;
+}
+}
+
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+.dropdown-content{
+  opacity:.5
+}
+
+
+li.tab{
+  transition: all 1s;
+}
+
+li.tab:hover{
+  background-color: rgba(244,154,157,.7);
+  border-radius:5px;
+}
+
+
+.brand-logo{
+  text-shadow:0 2px rgba(0,0,0,.7)
+}
+
+@media screen and (min-width: 992px){
+.padding{
+  padding-left: 30px;
+}
+}
+
+
+
+.sign-in{
+  font-size:20px !important;
+  padding:0;
+}
+
+#dropdown2{
+margin-top:10px !important;
+}
+
+@media screen and (max-width: 600px){
+#dropdown2{
+width:100% !important;
+}
+}
+
+
+
+
+.main-text-wrapper{
+padding:20px;
+  border: 2px solid rgba(238,110,115,0.7);
+}
+
+.main-text{
+  border-top:none;
+  max-height:200px;
+  }
+
+.read_more{
+  text-decoration: underline;
+  cursor:pointer;
+  color:blue;
+}
+
+.hidden{
+  overflow: hidden;
+}
+
+
+.below_the_fixed{
+  padding-top:130px;
+}
+
+@media screen and (max-width: 600px){
+.below_the_fixed{
+  padding-top: 50px;
+}
+}
+
+.nav-extended{
+  position:fixed;
+}
+
+/* フォームの実装*/
+
+.form_background{
+ max-width:960px;
+  padding:30px 50px;
+  margin:0 auto;
+}
+
+#new_posts,
+#new_posts_title{
+  background-color:#FFF;
+  border-color: lightgrey;
+  border-radius: 5px;
+}
+
+
+#submit_btn{
+width:100%;
+display:block;
+box-sizing:border-box;
+background-color:rgb(238,110,115);
+color:white;
+font-size:100%;
+padding:10px;
+border:1px solid #fce5f3;
+border-radius:5px;
+margin-bottom:10px;
+cursor:pointer;
+}
+
+#submit_btn:hover,
+#submit_btn:focus{
+background-color:rgb(234, 79, 85);}
+/* フォームの実装 終わり*/
+
+/*  ポストのタイトル*/
+.post_info{
+  font-weight:normal;
+  font-size: .8em;
+  line-height:20px;
+}
+
+.post_info:nth-child(1){
+margin-right: 6px;
+}
+
+.title-wrapper{
+  background-color:rgb(238,110,115);
+  padding:10px 20px;
+  border-radius:5px 5px 0 0;
+  color:#FFF;
+}
+
+.title{
+  font-size:110%;
+}
+
+/*  ポストのタイトル 終わり*/
+
+
+.disabled{
+  color:rgb(177, 178, 181) !Important;
+  cursor:not-allowed;
+}
+
+/*  Modal */
+
+.modal { width: 50% !important ; }
+
+.modal-content h5{
+  margin-top:5px;
+}
+
+.modal-fotter{
+  margin-bottom: 0px!important;
+  padding-bottom: 0px !important;
+}
+
+.signed_in_user{
+  padding-right:10px;
+}
+
+/*  Modal 終わり*/
+
+.left-content{
+  padding-top: 30px;
+}
+
+.side-bar{
+  width:100%;
+  height:400px;
+  border: 2px dotted grey;
+  margin-top: 30px;
+}
+

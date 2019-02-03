@@ -1,0 +1,18 @@
+<div class="container left-content">
+<div class = "title-wrapper">
+<strong class="title"><%= post.title.upcase %></strong>
+
+<% date = post.created_at.to_s.slice(0,16) %>
+<div>
+<span class ="post_info"> 投稿日時:<%= date %></span >
+<span class ="post_info">投稿者:<%= post.user.nickname%></span>
+</div>
+</div>
+<div class ="main-text-wrapper">
+<div class="main-text hidden">
+<%= post.text %>
+</div>
+<a href="/posts/<%=post.id %>" class="read_more">詳細...</a>
+</div>
+</div>
+
