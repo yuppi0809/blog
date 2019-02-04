@@ -11,6 +11,10 @@ before_action :move_to_index, except: [:index, :new]
 
   def show
     @post = Post.find(params[:id])
+    @previous = Post.where("id < ?", params[:id]).order("id DESC").first
+
+    @next = Post.where("id > ?", params[:id]).order(:id).first
+
 
   end
 

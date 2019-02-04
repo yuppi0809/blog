@@ -14,7 +14,7 @@
             <%= f.text_area :title, placeholder: 'タイトル (20文字まで)',id: 'new_posts_title' %>
           </div>
           <div style="margin: 8px 0">
-            <%= f.text_area :text, placeholder: '本文 (100文字まで)', style: 'width: 100%;height: 300px;',id: 'new_posts' %>
+            <%= f.text_area :text, placeholder: '本文 (400文字まで)', style: 'width: 100%;height: 300px;',id: 'new_posts' %>
           </div>
           <div class="">
             <div class="">
@@ -23,6 +23,10 @@
               <% end %>
 
            </div>
+  <% else %>
+  <div class="return-top">
+   <a class="left" href="/posts"><i class="material-icons left">arrow_back</i>トップに戻る</a>
+ </div>
       </div>
     </div>
   </body>

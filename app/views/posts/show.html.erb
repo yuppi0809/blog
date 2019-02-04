@@ -1,6 +1,6 @@
-    <div class="row below_the_fixed">
+<div class="row below_the_fixed">
 
-      <div class="col s12 m8 l9"> <!-- Note that "m4 l3" was added -->
+<div class="col s12 m8 l9"> <!-- Note that "m4 l3" was added -->
         <!-- Grey navigation panel
 
               This content will be:
@@ -53,13 +53,30 @@
 </div>
 
 </div>
-</div>
-      </div>
 
-<div class="col s12 m4 l3">
-  <div class="side-bar hide-on-small-and-down">
+<div class="page-changer">
+
+<% if @previous %>
+  <a class="left" href="/posts/<%= @previous.id %>"><i class="material-icons left">arrow_back</i>前の投稿</a>
+<% else %>
+  <i class="material-icons greyd-out big">arrow_back</i>
+<% end %>
+<% if @next %>
+  <a href="/posts/<%= @next.id %>" class="right"><i class="material-icons left">arrow_forward</i>次の投稿</a>
+<% else %>
+  <i class="material-icons greyd-out right big">arrow_forward</i>
+<% end %>
+</div>
+
+</div>
+</div>
+
+<!-- Side bar starts here -->
+<div class="col s12 m4 l3  hide-on-small-and-down">
+  <div class="side-bar">
     <p>ここに何か入る</p>
   </div>
+  <!-- Side bar ends here -->
        <!-- Note that "m8 l9" was added -->
         <!-- Teal page content
 
